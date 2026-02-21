@@ -79,10 +79,10 @@ addLayer("basic", {
             description: "Basic points boost point fragments.",
             cost: new Decimal(3),
             main() {
-                expu2 = 0.35
-                if (hasUpgrade("basic", 62)) expu2 = 0.3575
-                if (hasMilestone("rebirth", 13)) expu2 = 0.365
-                if (hasUpgrade("era", 103)) expu2 = 0.365
+                expu2 = 2
+                if (hasUpgrade("basic", 62)) expu2 = 3
+                if (hasMilestone("rebirth", 13)) expu2 = 4
+                if (hasUpgrade("era", 103)) expu2 = 5
                 softcapDescription12 = ""
                 sdsc = ""
                 scpow = 0.5
@@ -123,8 +123,8 @@ addLayer("basic", {
             description: "Point Fragments boost basic points.",
             cost: new Decimal(10),
             main() {
-                expu3 = 0.16
-                if (hasMilestone("rebirth", 13)) expu3 = 0.161616
+                expu3 = 2
+                if (hasMilestone("rebirth", 13)) expu3 = 5
                 softcapDescription13 = ""
                 sdsc = ""
                 scpow = 0.5
