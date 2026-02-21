@@ -85,9 +85,9 @@ addLayer("basic", {
                 if (hasUpgrade("era", 103)) expu2 = 5
                 softcapDescription12 = ""
                 sdsc = ""
-                scpow = 0.5
-                sppow = 0.4
-                hcpow = 0.3
+                scpow = 1
+                sppow = 2
+                hcpow = 3
                 upgEffect12 = upgradeEffect(this.layer, this.id)
                 if (upgEffect12.gte(new Decimal("e50000000")) ) {
                     softcapDescription12 = " (Softcapped)"
@@ -127,8 +127,8 @@ addLayer("basic", {
                 if (hasMilestone("rebirth", 13)) expu3 = 5
                 softcapDescription13 = ""
                 sdsc = ""
-                scpow = 0.5
-                sppow = 0.3
+                scpow = 2
+                sppow = 3
                 upgEffect13 = upgradeEffect(this.layer, this.id)
                 if (upgEffect13.gte(new Decimal("e5e6")) ) {
                     softcapDescription13 = " (Softcapped)"
