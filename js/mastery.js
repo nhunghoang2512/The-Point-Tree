@@ -627,12 +627,12 @@ addLayer("m", {
         let mult = new Decimal(1)
         let base = new Decimal(1)
         // base
-        if (hasUpgrade('m', 11)) base = new Decimal(3)
-        if (hasUpgrade('m', 12)) base = new Decimal(5)
-        if (hasUpgrade('m', 15)) base = new Decimal(12)
-        if (hasUpgrade('m', 44)) base = new Decimal(85)
-        if (hasUpgrade('m', 73)) base = new Decimal(2500)
-        if (hasUpgrade('m', 75)) base = new Decimal(5e6)
+        if (hasUpgrade('m', 11)) base = new Decimal(300)
+        if (hasUpgrade('m', 12)) base = new Decimal(500)
+        if (hasUpgrade('m', 15)) base = new Decimal(1200)
+        if (hasUpgrade('m', 44)) base = new Decimal(8500)
+        if (hasUpgrade('m', 73)) base = new Decimal(250000)
+        if (hasUpgrade('m', 75)) base = new Decimal(5e8)
         // mult
         if (hasUpgrade('m', 42)) mult = mult.times(upgradeEffect('m', 42))
         if (hasUpgrade('m', 13)) mult = mult.times(2.5)
