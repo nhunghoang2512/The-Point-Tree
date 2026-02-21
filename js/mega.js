@@ -135,10 +135,10 @@ addLayer("mega", {
             cost: new Decimal(450),
             unlocked() { return hasUpgrade("mega", 13) },
             main() {
-                mu4exp = 0.055
-                if (hasUpgrade('basic', 63)) mu4exp = 0.08
-                if (hasUpgrade('mega', 41)) mu4exp = 0.1
-                if (hasUpgrade('e', 64)) mu4exp = 0.155
+                mu4exp = 1.55
+                if (hasUpgrade('basic', 63)) mu4exp = 2
+                if (hasUpgrade('mega', 41)) mu4exp = 3
+                if (hasUpgrade('e', 64)) mu4exp = 4
                 softcapDescriptionm14 = ""
                 sdsc = ""
                 scpow = 0.8
