@@ -254,16 +254,16 @@ addLayer("e", {
                 cost: new Decimal(3300),
                 unlocked() { return hasUpgrade("e", 13) },
                 main() {
-                    e4exp = 0.125
-                    if (hasUpgrade('e', 33)) e4exp = 0.16
-                    if (hasMilestone('e', 9)) e4exp = 0.195
-                    if (hasUpgrade('e', 15)) e4exp = 0.25
-                    if (hasUpgrade("era", 131)) e4exp = 0.29
+                    e4exp = 1.25
+                    if (hasUpgrade('e', 33)) e4exp = 1.6
+                    if (hasMilestone('e', 9)) e4exp = 1.95
+                    if (hasUpgrade('e', 15)) e4exp = 2.5
+                    if (hasUpgrade("era", 131)) e4exp = 2.9
                     softcapDescriptione14 = ""
                     sdsc = ""
-                    scpow = 0.5
-                    sppow = 0.4
-                    if (hasUpgrade('m', 92)) scpow = 0.52
+                    scpow = 2
+                    sppow = 3
+                    if (hasUpgrade('m', 92)) scpow = 4
                     upgEffecte14 = upgradeEffect(this.layer, this.id)
                     if (upgEffecte14.gte(new Decimal("e700")) ) {
                         softcapDescriptione14 = " (Softcapped)"
